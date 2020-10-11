@@ -32,6 +32,8 @@ public class HomeServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+             request.getSession().setAttribute("message", "You have logged out");
+             
              getServletContext().getRequestDispatcher("/WEB-INF/home.jsp").forward(request, response);                    
     }
 

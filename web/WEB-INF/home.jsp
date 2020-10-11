@@ -13,9 +13,10 @@
     </head>
     <body>
         <h1>Home Page</h1>
-        
-        <form action="home" method="GET">
-            <h2>Hello ${user.username}</h2>
+        <h2>Hello ${user.username}</h2>
+
+        <form action="home" method="POST">
+                   <a href="login">Logout</a>
         </form>
     </body>
 </html>
